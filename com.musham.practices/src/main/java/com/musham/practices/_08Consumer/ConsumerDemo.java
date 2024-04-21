@@ -17,6 +17,6 @@ public class ConsumerDemo {
 		consumer.accept("Ciena");
 		consumer.accept("Blueplanet");
 		
-		System.out.println("This is consumer demo");
+		System.out.println("This is consumer demo1");
 	}
 }
