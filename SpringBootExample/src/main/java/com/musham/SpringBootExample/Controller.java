@@ -1,5 +1,8 @@
 package com.musham.SpringBootExample;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -32,4 +35,15 @@ public class Controller {
 		return "the sum is: " + (value1 + value2);
 	}
 
+	@GetMapping("/devide")
+	public ResponseEntity<String> CalculateDivision(@RequestParam int value1, @RequestParam int value2) {
+		return new ResponseEntity<>("The division value is: " + value1 / value2, HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+	
+	@DeleteMapping
+	public String delete()
+	{
+		System.out.println("This is to test Custom exception");
+		throw new CustomException();
+	}
 }
