@@ -13,4 +13,8 @@
 		<item key="moveWizard.updateQualifiedNames" value="false"/>
 		<item key="patterns" value="*"/>
 	</section>
+	<section name="RefactoringWizard.Externalize strings in &apos;Controller.java&apos;">
+		<item key="width" value="614"/>
+		<item key="height" value="483"/>
+	</section>
 </section>

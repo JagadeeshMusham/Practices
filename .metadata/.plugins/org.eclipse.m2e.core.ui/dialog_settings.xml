@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/Users/jmusham/From Old Mac/eclipse-workspace/akka_workspace/MyPractices/spring_core"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -17,7 +18,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
-		<item key="catalog" value="All Catalogs"/>
+		<item key="catalog" value="https://repo1.maven.org/maven2/archetype-catalog.xml"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -48,6 +49,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.musham.SpringBootExample"/>
 			<item value="com.musham"/>
 			<item value="com.ciena.test"/>
 			<item value="com.ciena"/>
@@ -58,6 +60,8 @@
 			<item value="HackerRank"/>
 		</list>
 		<list key="artifactId">
+			<item value="SpringBootExample"/>
+			<item value="practices"/>
 			<item value="com.musham"/>
 			<item value="com.ciena.test"/>
 			<item value="com.ciena"/>

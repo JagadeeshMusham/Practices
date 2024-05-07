@@ -1,8 +1,0 @@
-package com.musham.practices.SpringBoot.Simple.StudentDB.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.musham.practices.SpringBoot.StudentDB.Model.Course;
-
-public interface CourseRepository extends JpaRepository<Course, Long> {
-}

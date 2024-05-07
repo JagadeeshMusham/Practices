@@ -1,5 +1,0 @@
-package com.musham.practices.SpringBoot.Simple.StudentDB.repository;
-
-public class StudentRepository {
-
-}
