@@ -22,14 +22,14 @@ public class Arrise_08May2024 {
 
 	public static void main(String[] args) {
 
-		int num = 123;
+		int num = -122;
 
 		System.out.println("The Input is : " + num);
 
 		boolean bNegative = false;
 		if (num < 0) {
 			bNegative = true;
-			num = num * (-1);
+			num *= -1;
 		}
 
 		int reverse = 0;
@@ -43,8 +43,8 @@ public class Arrise_08May2024 {
 		if (reverse <= -231 || reverse >= 230) {
 			System.out.println(0);
 		} else {
-			if (bNegative == true)
-				System.out.print("-");
+			if (bNegative)
+				reverse *= -1;
 			System.out.print(reverse);
 		}
 	}
