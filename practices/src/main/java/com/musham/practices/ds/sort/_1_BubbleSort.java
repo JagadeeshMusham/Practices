@@ -32,7 +32,7 @@ public class _1_BubbleSort {
 	 * end procedure
 	 * 
 	 * 
-	 * The sorting format will be as follows
+	 * The sorting order will be as follows
 	 * 
 	 * 34 12 54 1 6
 	 * 12 34 1 6 54

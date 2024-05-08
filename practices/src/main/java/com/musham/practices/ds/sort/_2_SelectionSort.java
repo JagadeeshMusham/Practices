@@ -36,7 +36,7 @@ public class _2_SelectionSort {
 	 * 
 	 * 
 	 * 
-	 * The sorting format will be as follows
+	 * The sorting order will be as follows
 	 * 
 	 * 34 12 54 01 06
 	 * 		12 34 54 01 06
