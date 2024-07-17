@@ -79,7 +79,7 @@ public class _1_BubbleSort {
 				printArray(values);
 			}
 			
-			System.out.println("\n The Array after " + (firstCounter+1) + " iteration\n");
+			System.out.println("\n \t\tThe Array after " + (firstCounter+1) + " iteration\n");
 			printArray(values);
 		}
 	}
