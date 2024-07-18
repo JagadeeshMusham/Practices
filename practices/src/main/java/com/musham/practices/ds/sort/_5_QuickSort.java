@@ -2,6 +2,13 @@ package com.musham.practices.ds.sort;
 
 import java.util.Scanner;
 
+/*
+ * Best Case: O(nlog⁡n)
+ * Average Case: O(nlog⁡n)
+ * Worst Case: O(n2) (poor pivot selection)
+ * Space Complexity: O(log⁡n)
+ */
+
 /**
  * The explanation will be as follows
  * 

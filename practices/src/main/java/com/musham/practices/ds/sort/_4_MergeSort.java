@@ -2,6 +2,13 @@ package com.musham.practices.ds.sort;
 
 import java.util.Scanner;
 
+/*
+ * Best Case: O(nlog⁡n)
+ * Average Case: O(nlog⁡n)
+ * Worst Case: O(nlog⁡n)
+ * Space Complexity: O(n)
+ */
+
 public class _4_MergeSort {
 	private static void merge(int[] array, int start, int mid, int total) {
 		int tempArray[] = new int[total+1];
