@@ -73,6 +73,26 @@ public class BinarySearchTree {
 		traverseInOrder(node.right);
 	}
 
+	public void traversePreOrder(Node node) {
+		if (node == null) {
+			return;
+		}
+
+		System.out.print(node.data + " ");
+		traversePreOrder(node.left);
+		traversePreOrder(node.right);
+	}
+
+	public void traversePostOrder(Node node) {
+		if (node == null) {
+			return;
+		}
+
+		traversePostOrder(node.left);
+		traversePostOrder(node.right);
+		System.out.print(node.data + " ");
+	}
+
 	private int getHeightOfTree(Node node) {
 		if (node == null) {
 			return 0;
@@ -130,6 +150,7 @@ public class BinarySearchTree {
 		return currentNode;
 	}
 
+	//Todo J, Have to re-look this method
 	public void deleteNode(int data) {
 		Node node = root;
 		if (node == null) {
@@ -201,7 +222,7 @@ public class BinarySearchTree {
 
 		bst.traverseInOrder(bst.root);
 
-		System.out.println("\nThe level order of the tree is: ");
+		System.out.println("\n\nThe level order of the tree is: ");
 		bst.traverseLevelOrder(bst.root);
 
 		bst.deleteNode(15);
@@ -223,5 +244,17 @@ public class BinarySearchTree {
 		bst.deleteNode(18);
 		System.out.println();
 		bst.traverseInOrder(bst.root);
+		
+		System.out.println("\n\nThe In order is:");
+		bst.traverseInOrder(bst.root);
+		
+		System.out.println("\n\nThe Pre order is:");
+		bst.traversePreOrder(bst.root);
+
+		System.out.println("\n\nThe Post order is:");
+		bst.traversePostOrder(bst.root);
+		
+		System.out.println("\n\nThe height of the tree : " + bst.getHeightOfTree(bst.root));
+		
 	}
 }
