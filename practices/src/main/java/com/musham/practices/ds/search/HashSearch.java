@@ -3,6 +3,11 @@ package com.musham.practices.ds.search;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+ * Best Case: O(1)
+ * Average Case: O(1)
+ * Worst Case: O(n) (due to collisions and poor hash function)
+ */
 public class HashSearch {
     public static void main(String[] args) {
         // Create a HashMap to store key-value pairs

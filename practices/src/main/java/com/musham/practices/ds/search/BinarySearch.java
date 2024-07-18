@@ -1,5 +1,11 @@
 package com.musham.practices.ds.search;
 
+/*
+ * Best Case: O(1)
+ * Average Case: O(log⁡n)
+ * Worst Case: O(log⁡n)
+ */
+
 public class BinarySearch {
     // Function to perform binary search recursively
     public static int binarySearch(int[] arr, int key, int left, int right) {

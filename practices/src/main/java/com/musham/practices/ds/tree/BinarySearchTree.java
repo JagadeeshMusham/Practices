@@ -1,5 +1,11 @@
 package com.musham.practices.ds.tree;
 
+/*
+ * Best Case: O(log⁡n)
+ * Average Case: O(log⁡n)
+ * Worst Case: O(n) (unbalanced tree)
+ */
+
 class Node {
 	int data;
 	Node left;

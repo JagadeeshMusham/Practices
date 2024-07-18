@@ -6,10 +6,64 @@ import java.util.Scanner;
  * @author jmusham
  *
  */
-public class _2_SelectionSort {
+
+/*
+ * This is very basic sorting
+ * Best Case: O(n2)
+ * Average Case: O(n2)
+ * Worst Case: O(n2)
+ */
+public class _1_SelectionSort {
 	/**
 	 * The algorithm for selection sort:
 	 * 
+	 * My Explanation on 18th July, 2024:
+	 * In selection sort, the sorting will be done on the cell. 
+	 * i.e., at the first iteration low value will be available at first cell.
+	 * The process will be as follows:
+	 * 
+	 * Pick first cell(i.e., 0 position),
+	 * 		Compare with next cell (i.e., 1st position)
+	 * 			if the first value is greater than next, then swap
+	 * 			else do nothing
+	 * 		Compare first cell with next position(i.e., 2nd position)
+	 * 		repeat until it reaches entire digits.
+	 * 		after completion of first iteration least value will be available in the first cell.
+	 * Pick the next cell(i.e., 1st position), perform until last cell
+	 * Repeat this until last cell.
+	 * Final result will be in sorted array
+	 * 
+	 * Following explain more clearly
+To sort below
+5 3 9 2 7 6 1 4
+
+Following are the steps:
+  3 5 9 2 7 6 1 4
+  2 5 9 3 7 6 1 4
+  1 5 9 3 7 6 2 4
+
+  1 3 9 5 7 6 2 4
+  1 2 9 5 7 6 3 4
+  
+  1 2 5 9 7 6 3 4
+  1 2 3 9 7 6 5 4
+  
+  1 2 3 7 9 6 5 4
+  1 2 3 6 9 7 5 4
+  1 2 3 5 9 7 6 4
+  1 2 3 4 9 7 6 5
+
+  1 2 3 4 7 9 6 5
+  1 2 3 4 6 9 7 5
+  1 2 3 4 5 9 7 6
+
+  1 2 3 4 5 7 9 6
+  1 2 3 4 5 6 9 7
+
+  1 2 3 4 5 6 7 9
+	 * 
+	 * 
+	 * General Explanation:
 	 * 1.Start with an unsorted array of elements.
 	 * 2.Repeat steps 3-5 for i=0 to n−1, where n is the number of elements in the array.
 	 * 3.Set the minimum index to i.

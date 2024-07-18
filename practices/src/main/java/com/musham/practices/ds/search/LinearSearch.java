@@ -1,5 +1,11 @@
 package com.musham.practices.ds.search;
 
+/*
+ * Best Case: O(1)
+ * Average Case: O(n)
+ * Worst Case: O(n)
+ */
+
 public class LinearSearch {
 	// Function to perform linear search
 	public static int linearSearch(int[] arr, int key) {
