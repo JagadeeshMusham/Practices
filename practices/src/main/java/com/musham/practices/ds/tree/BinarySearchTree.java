@@ -34,6 +34,9 @@ public class BinarySearchTree {
 					return posNode;
 				}
 				posNode = posNode.right;
+			} else {
+				System.out.println("The given value already available in the tree");
+				return null;
 			}
 		}
 	}
@@ -50,11 +53,13 @@ public class BinarySearchTree {
 		}
 
 		Node posNode = getPosition(value);
-
-		if (posNode.data > value) {
-			posNode.left = currentNode;
-		} else if (posNode.data < value) {
-			posNode.right = currentNode;
+		
+		if (posNode != null) {
+			if (posNode.data > value) {
+				posNode.left = currentNode;
+			} else if (posNode.data < value) {
+				posNode.right = currentNode;
+			}
 		}
 	}
 
@@ -182,6 +187,7 @@ public class BinarySearchTree {
 
 		bst.insertNode(10);
 		bst.insertNode(15);
+		bst.insertNode(15);
 		bst.insertNode(5);
 		bst.insertNode(12);
 		bst.insertNode(14);
@@ -209,7 +215,7 @@ public class BinarySearchTree {
 		bst.deleteNode(10);
 		System.out.println();
 		bst.traverseInOrder(bst.root);
-		
+
 		bst.deleteNode(10);
 		System.out.println();
 		bst.traverseInOrder(bst.root);
