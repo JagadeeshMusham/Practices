@@ -29,8 +29,11 @@ public class Arrise_08May2024 {
 		boolean bNegative = false;
 		if (num < 0) {
 			bNegative = true;
+			
+			// or we can use Math.abs method also to remove sign values
 			num *= -1;
 		}
+		
 
 		int reverse = 0;
 

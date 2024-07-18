@@ -5,7 +5,7 @@ public class EnumUtilitiesDemo {
 		John(11), Bella(10), Sam(13), Viraaj(9);
 		private int age; // variable defined in enum Student
 
-		int getage() {
+		int getAge() {
 			return age;
 		} // method defined in enum Student
 
@@ -19,6 +19,6 @@ public class EnumUtilitiesDemo {
 	public static void main(String args[]) {
 		System.out.println("In Main method");
 		Student S;
-		System.out.println("Age of Viraaj is " + Student.Viraaj.getage() + " years");
+		System.out.println("Age of Viraaj is " + Student.Viraaj.getAge() + " years");
 	}
 }
